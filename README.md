@@ -16,8 +16,10 @@ This should work fine with Indian IP address.
 #### From Source:  
 #### MacOS/Linux/Win:  
 Make sure you're switched to Python3  
-1. `pip install -r requirements.txt`     
-2. `python vaccineFinder.py`   
+1. Download ZIP or clone the repo by running `git clone https://github.com/gideonn/indiaCovidVaxFinderBot.git`  
+   Go into that directory.  
+2. Run `pip install -r requirements.txt`     
+3. Run `python vaccineFinder.py`   
 
    
 #### Inputs:
