@@ -1,0 +1,25 @@
+################## Session Details: ##################
+Date Available: 05-05-2021. Fee type: Free 
+Center name: KEM Hospital 1, District: Mumbai, Address: Acharya Donde Marg parel mumbai, Maharashtra 
+Vaccine Name: COVISHIELD, Vaccine count: 126. 
+Available Slots: ['11:30AM-01:30PM', '01:30PM-03:30PM', '03:30PM-05:30PM', '05:30PM-08:00PM'] 
+################## Session Details: ##################
+Date Available: 05-05-2021. Fee type: Free 
+Center name: AKURLI MATERNITY KANDIVALI, District: Mumbai, Address: Akurli Road Kandivali East, Maharashtra 
+Vaccine Name: COVISHIELD, Vaccine count: 2. 
+Available Slots: ['12:00PM-01:00PM', '01:00PM-02:00PM', '02:00PM-03:00PM', '03:00PM-05:00PM'] 
+################## Session Details: ##################
+Date Available: 05-05-2021. Fee type: Free 
+Center name: BKC Jumbo COVID Facility 2, District: Mumbai, Address: MMRDA GROUND BKC MUMBAI, Maharashtra 
+Vaccine Name: COVISHIELD, Vaccine count: 927. 
+Available Slots: ['09:00AM-11:00AM', '11:00AM-01:00PM', '01:00PM-03:00PM', '03:00PM-06:00PM'] 
+################## Session Details: ##################
+Date Available: 05-05-2021. Fee type: Free 
+Center name: BKC Jumbo COVID Facility 1, District: Mumbai, Address: MMRDA GROUND BKC MUMBAI, Maharashtra 
+Vaccine Name: COVISHIELD, Vaccine count: 598. 
+Available Slots: ['12:00PM-01:00PM', '01:00PM-02:00PM', '02:00PM-03:00PM', '03:00PM-05:00PM'] 
+################## Session Details: ##################
+Date Available: 05-05-2021. Fee type: Paid 
+Center name: HABIB HOSPITAL, District: Mumbai, Address: 159JAIL ROAD DONGARI MUMBAI, Maharashtra 
+Vaccine Name: COVISHIELD, Vaccine count: 1. 
+Available Slots: ['01:00AM-02:00AM', '02:00AM-03:00AM', '03:00AM-04:00AM', '04:00AM-05:30AM'] 
