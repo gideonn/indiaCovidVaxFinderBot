@@ -6,16 +6,20 @@ Please note that the COWIN API is only accessible from Indian IPs, so you'll hav
 This should work fine with Indian IP address.  
 
 ## Instructions (how to run):
-#### Binary (easier):
-Head over to Releases, download the latest `.exe`.  
-You might need to unblock the app, by Right Click > Properties > Unblock.  
+#### Binary (easier for Windows):  
+#### Windows:  
+1. Head over to Releases section, download the latest `.exe`.
+   Link: https://github.com/gideonn/indiaCovidVaxFinderBot/releases  
+2. You may need to unblock the app, by Right Click > Properties > Unblock.  
+3. Double click!  
 
 #### From Source:  
-`python vaccineFinder.py`  
-You might need to install a few dependencies, if it says "module xxx not found"  
-`pip install <module_name>` should take care of that.  
-  
-  
+#### MacOS/Linux/Win:  
+Make sure you're switched to Python3  
+1. `pip install -r requirements.txt`     
+2. `python vaccineFinder.py`   
+
+   
 #### Inputs:
 * Age group: 18-45 or 45+
 * Search by Pin code OR Search by District code (lookup table is saved as state_district.txt in the same directory as this file)
