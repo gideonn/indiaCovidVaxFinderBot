@@ -8,6 +8,8 @@ import os
 import certifi
 
 os.environ['REQUESTS_CA_BUNDLE'] = certifi.where()
+API_URL_HOST = "https://cdn-api.co-vin.in/api/v2"
+headers = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:88.0) Gecko/20100101 Firefox/88.0"}
 
 def util_beep():
     for i in range(1000):
@@ -24,7 +26,7 @@ def util_get_states():
         print("Building state district data file. Please refer to state_district.txt when searching by district id.")
         state_district_file = open(STATE_DISTRICT_LOOKUP_FILE, "a")
 
-    response = requests.get('https://cdn-api.co-vin.in/api/v2/admin/location/states')
+    response = requests.get(API_URL_HOST + '/admin/location/states', headers = headers)
     json_data = json.loads(response.text)
 
     for state in json_data['states']:
@@ -38,7 +40,7 @@ def util_get_states():
 
 
 def util_get_districts_by_state(state_id):
-    response = requests.get("https://cowin.gov.in/api/v2/admin/location/districts/{}".format(state_id))
+    response = requests.get(API_URL_HOST + '/admin/location/districts/{}'.format(state_id), headers = headers)
     json_data = json.loads(response.text)
     return json_data['districts']
 
@@ -82,14 +84,14 @@ def process_response(response, age_group):
 
 
 def get_7day_vaccination_info_by_pin(age_group, formatted_date, pincode):
-    url = 'https://cowin.gov.in/api/v2/appointment/sessions/public/calendarByPin?pincode={}&date={}'
-    response = requests.get(url.format(pincode, formatted_date))
+    url = API_URL_HOST + '/appointment/sessions/public/calendarByPin?pincode={}&date={}'
+    response = requests.get(url.format(pincode, formatted_date), headers = headers)
     process_response(response, age_group)
 
 
 def get_7day_vaccination_info_by_district(age_group, formatted_date, dist_id):
-    url = 'https://cowin.gov.in/api/v2/appointment/sessions/public/calendarByDistrict?district_id={}&date={}'
-    response = requests.get(url.format(dist_id, formatted_date))
+    url = API_URL_HOST + '/appointment/sessions/public/calendarByDistrict?district_id={}&date={}'
+    response = requests.get(url.format(dist_id, formatted_date), headers = headers)
     process_response(response, age_group)
 
 
